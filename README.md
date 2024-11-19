@@ -1,6 +1,6 @@
 # From Deception to Detection: Evaluating and Optimizing Language Models (LMs) to Detect LLM-Edited Fake News
 
-## Contributprs
+## Contributors
 
 - **Ali Azarsina**
 - **Majid Faridfar**
