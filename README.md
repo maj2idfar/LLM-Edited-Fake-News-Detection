@@ -43,7 +43,7 @@ Based on prior work, we select BERT, RoBERTa, and advanced models like DeBERTa a
 
 ## Result
 
-![alt text](docs/pics/result.png)
+![alt text](docs/pics/results.png)
 
 ## Data
 
