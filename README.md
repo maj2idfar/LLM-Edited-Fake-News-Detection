@@ -1,5 +1,11 @@
 # From Deception to Detection: Evaluating and Optimizing Language Models (LMs) to Detect LLM-Edited Fake News
 
+## Contributprs
+
+- **Ali Azarsina**
+- **Majid Faridfar**
+- **Bardia Khalafi**
+
 ## Abstract
 
 As AI-generated content becomes more prevalent, detecting language model (LLM)-edited fake news presents a growing challenge. This study evaluates BERT, RoBERTa, and Llama (2,3) models for identifying fake news edited by LLMs. We created an LLM-edited corpus by rewriting a human-written fake news dataset (PolitiFact and GossipCop of FakeNewsNet) with Llama 2. Observing a performance drop in detection accuracy, we addressed this by (1) prompt engineering with zero- and few-shot learning using Llama, (2) fine-tuning BERT and RoBERTa on the original dataset, and (3) fine-tuning RoBERTa on the LLM-edited dataset. Fine-tuning on the LLM-edited dataset achieved the highest accuracy, highlighting the importance of tailored training strategies in combating LLM-driven disinformation.
@@ -15,6 +21,8 @@ Recent studies reveal that LLM-generated misinformation is harder to detect than
 ## Baselines
 
 Based on prior work, we select BERT, RoBERTa, and advanced models like DeBERTa as baselines. These models, particularly RoBERTa and DeBERTa, show high accuracy on FakeNewsNet data. We used these as baselines to evaluate their performance on our secondary dataset.
+
+![alt text](docs/pics/baselines.png)
 
 ## Methodology
 
@@ -35,17 +43,11 @@ Based on prior work, we select BERT, RoBERTa, and advanced models like DeBERTa a
 
 ## Result
 
-![alt text](docs/result.png)
+![alt text](docs/pics/result.png)
 
 ## Data
 
 Our primary data source was the FakeNewsNet dataset, focusing on the GossipCop subset due to its suitable size and structure. After preprocessing, we reduced sample size for compatibility with model context windows and used 500 fake and 500 real news samples from GossipCop for our secondary LLM-enhanced dataset.
-
-## Contributions
-
-- **Ali Azarsina**: Data gathering, evaluation, model improvement, report writing.
-- **Bardia Khalafi**: Evaluation, report writing, presentation slides.
-- **Majid Faridfar**: Dataset creation, evaluation, report writing, presentation slides.
 
 ---
 
